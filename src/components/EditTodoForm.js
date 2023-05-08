@@ -4,7 +4,7 @@ export const EditodoForm = ({editTodo,task}) => {
   const [value, setValue]= useState(task.task)
   const handleSubmit = e =>{
     e.preventDefault();
-    editTodo(value);
+    editTodo(value,task.id);
     setValue("");
   }
 
